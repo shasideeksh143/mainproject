@@ -1,0 +1,21 @@
+{% load static %}
+<ul class="nav nav-pills nav-justified">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Giddalur</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="{% url 'main' %}">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="{% url 'stu_login' %}">Login</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link active" href="{% url 'stu_registration' %}">Register</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link active" href="{% url 'ForgottenPassword' %}">ForgotPassword</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link active" href="{% url 'admin_login' %}"><img width="20"height="20" src="{% static 'images/adminlogo.png' %}">Admin</a>
+  </li>
+</ul>

@@ -1,0 +1,47 @@
+{% extends 'common.html' %}
+{% load static %}
+{% block common %}
+    {% include 'adminnavbar.html' %}
+    <div class="forgotten"style="background-image: url({% static 'images/back1.jpg' %});
+            background-repeat: no-repeat;">
+
+    <br>
+        <marquee><h3><i>VIEW ALL STUENTS DETALIS</i></h3></marquee>
+
+    <table align="center"border="1"cellpadding="5">
+    <tr>
+        <th>Name</th><th>Age</th><th>Gender</th><th>Contact no</th><th>Username</th>
+    </tr>
+    {% for x in data %}
+        <tr>
+        <td>{{ x.name }}</td>
+        <td>{{ x.age }}</td>
+        <td>{{ x.gender }}</td>
+        <td>{{ x.contactno }}</td>
+        <td>{{ x.username }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </PRE>
+    </div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'common.html' %}
+{% load static %}
+{% block common %}
+    {% include 'stunavbar.html' %}
+    <div class="login"style="background-image: url({% static 'images/back1.jpg' %});
+            background-repeat: no-repeat;">
+       <br><br>
+    <form action="{% url 'stu_check' %}" method="post">
+       {% csrf_token %}
+    <table align="center">
+        <tr><th></th><th><h4><u>Student Login</u></h4></th></tr>
+    <tr>
+        <th rowspan="4"><img height="100" width="100" src="{% static 'images/login.png' %}"></th>
+       <th style="mso-cellspacing: 20px"><input type="text"placeholder="Username"required maxlength="15"name="uname"></th>
+    </tr>
+    <tr><th>
+        <input type="password"placeholder="Password"required maxlength="15" name="pw"></th></tr>
+    <tr><th style="text-align: center;">
+        <button style="background-color: #dfdfdf;color: dodgerblue" type="submit">Login</button></th></tr>
+
+    </table>
+    </form>
+    <br>
+    <h6 style="text-align: center;"><a href="{% url 'stu_registration' %}" ><u><i>New Register?</i></u></a>    or    <a href="{% url 'ForgottenPassword' %}" ><u><i>Forgotten Password?</i></u></a></h6>
+
+        {% for x in messages %}
+            <h2 align="center" style="background-color: #dfdfdf;">Status :{{ x }}</h2>
+        {% endfor %}
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+    </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+.register{
+    background-position: center;
+    background-size: cover;
+}
+.forgotten{
+    background-position: center;
+    background-size: cover;
+}
+.login{
+    background-position: center;
+    background-size: cover;
+}
+.viewstuprofile{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.adminlogin{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.updatestuprofile{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

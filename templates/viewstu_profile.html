@@ -1,0 +1,41 @@
+{% extends 'common.html' %}
+{% load static %}
+{% block common %}
+    {%  include 'stuloginnavbar.html' %}
+    <div class="viewstuprofile" style="background-image: url({% static 'images/back1.jpg' %})">
+    <br><br>
+    <table align="center">
+    <tr><th colspan="2">VIEW {{ name|upper }} PROFILE</th></tr>
+    <TR><td>Name       </td><td>: {{ data.name }}</td></TR>
+    <tr><td>Age        </td><td>: {{ data.age }}</td></tr>
+    <tr><td>Gender     </td><td>: {{ data.gender }}</td></tr>
+    <tr><td>Contact No </td><td>: {{ data.contactno }}</td></tr>
+    </table>
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+    </div>
+{% endblock %}

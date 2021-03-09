@@ -1,0 +1,18 @@
+{% load static %}
+<ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+    <a class="nav-link active" href="#">{{ name|upper }}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="{% url 'stu_home' %}?un={{ name }}">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="{% url 'view_stuprofile' %}?un={{ name }}">View-Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="{% url 'update_stuprofile' %}?un={{ name }}">Update-Profile</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link active" href="{% url 'main' %}"><img width="20"height="20" src="{% static 'images/greenlog.png' %}">Logout</a>
+  </li>
+</ul>
